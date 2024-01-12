@@ -1,0 +1,584 @@
+.nav{
+    width: 60%;
+    height: 60px;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.navbar{
+    width: 40%;
+    height: 60px;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.search{
+    cursor: pointer;
+}
+.dropdown-toggle{
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.dropdown-toggle:hover{
+    background-color: rgb(15, 14, 14);
+
+}
+.try{
+    width: auto;
+    height: 40px;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.try:hover{
+    background-color: rgb(15, 14, 14);
+}
+.user{
+    width: 30px;
+}
+.container-fluid{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:antiquewhite;
+}
+.cou{
+    width: 1200px;
+    height: 600px;
+    margin-top: 2%;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.logo{
+    width: 70px;
+}
+.poster{
+    width: 100%;
+    
+}
+.container-fluid{
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(13, 14, 15, 0.52), rgba(13, 4, 11, 0.73)),
+    url('poster.jpg');
+    background-size: cover;
+    position: relative;
+    width: 80%;
+    height: 870px;
+}
+.tit{
+    position: absolute;
+    top: 20%;
+    left:8%;
+    color: antiquewhite;
+}
+.tit1{
+    position: absolute;
+    top: 70%;
+    left:8%;
+    color: antiquewhite;
+}
+.cont{
+ 
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+}
+.second{
+    
+    
+    color: black;
+}
+.fav{
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.fav12{
+    font-size: 20px;
+    margin-left: 15%;
+
+}
+.fav2{
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.fav1{
+    font-size: 20px;
+    margin-left: 15%;
+
+}
+.first{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.square{
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+    cursor: pointer;
+}
+.square:hover{
+    background-color: black;
+    opacity: 0.8;
+    transform: scale(1.1);
+
+}
+.square1{
+    width: 30%;
+}
+.square1:hover{
+    background-color: black;
+    opacity: 0.8;
+    transform: scale(1.1);
+
+}
+
+.box{
+    display: flex;
+    flex-direction:row;
+   
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+}
+.box1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.on{
+    display: none;
+        
+}
+.rectangle{
+    width: 100%;
+}
+.remote{
+    margin-top: 5%;
+    background-image:
+    linear-gradient(to bottom, rgba(13, 14, 15, 0.52), rgba(13, 4, 11, 0.73)),
+    url('remote.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.finaltit{
+    position: absolute;
+    top: 260%;
+    left:8%;
+    color: antiquewhite;
+}
+.ft{
+    width: 25%;
+    font-size: 20px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.finalcuttitle{
+   
+    color: antiquewhite;
+    text-align: center;
+    padding: 8%;
+}
+.ftcut{
+    width: 100%;
+    font-size: 20px;
+    padding: 10%;
+    color: antiquewhite;
+}
+.best{
+    display: none;
+}
+
+.ele{
+    background-color: black;
+    width: auto;
+    height: 150;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.terms{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    
+    justify-content: space-around;
+    color: grey;
+}
+
+@media screen and (max-width:800px) {
+    .cont{
+       display: none;
+       
+    }
+   
+   
+   
+    .square{
+       width: 50%;
+    }
+    .on{
+        display: flex;
+            flex-direction: column;
+            width: auto;
+            background-color: antiquewhite;
+    }
+    .remote{
+        width: 100%;
+        height: 50%;
+
+    }
+    .ft{
+        font-size: 10px;
+    }
+    .finaltit{
+        display: none;
+    }
+    .best{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+        background-color: black;
+        align-items: center;
+        
+        margin: auto;
+       
+    }
+    .ele{
+        background-color: black;
+        width: 50%;
+        height: 150;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    
+    }
+    .terms{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        
+        justify-content: space-around;
+        color: grey;
+    }
+    
+
+    
+    
+   
+   
+   
+   
+    
+    
+}
+
+
+
+
+
+.slider-container {
+    width: 90%;
+    overflow: hidden;
+    background-color: black;
+    margin: auto;
+    background-color: black;    
+}
+
+
+#menu {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.display{
+    display: none;
+}
+.onedisplay{
+    visibility: hidden;
+}
+.btnone{
+    visibility: visible;
+}
+.btntwo{
+    visibility: visible;
+}
+
+
+@media screen and (max-width:800px){
+    .slider-container{
+        
+       
+    }
+    .slider{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sliderone{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .btnone{
+        visibility: hidden;
+    }
+    .btntwo{
+        visibility: hidden;
+    }
+    .card-content{
+        width: 80%;
+    }
+    .test{
+        visibility: visible;
+    }
+   
+    .nav{
+       visibility: hidden;
+    }
+    .display{
+       
+        display: flex;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(26, 25, 25);
+    }
+    .bar{
+        height: 35px;
+    }
+   
+   
+    
+    
+   
+       
+    
+}
+
+
+
+.container{
+    width: 90%;
+    overflow: hidden;
+   
+    
+    
+}
+.grey{
+    color: grey;
+}
+@media screen and (max-width:800px){
+
+    
+    .cou{
+      
+        width: 350px;
+        height: 300px;
+        
+        
+        background-color: black;
+        border-radius: 10px;
+        overflow: hidden;
+        
+    }
+    .display{
+       
+        display: flex;
+        margin-top: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(26, 25, 25);
+    }
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-color: black;
+    
+}
+.sliderone {
+    display: flex;
+    
+    transition: transform 0.5s ease-in-out;
+    background-color: black;
+}
+.manu{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.card {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+   border: none;
+   
+   cursor: pointer;
+ 
+  
+    
+    overflow: hidden;
+    height: auto;
+    padding-top: 5;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    .test{
+        visibility: visible;
+    }
+   
+   
+
+
+}
+.test{
+   visibility: hidden;
+}
+.test{
+    margin: 5px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: antiquewhite;
+
+    
+    
+}
+
+/* Optional: Style for card content */
+.card-content {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+img{
+   
+}
+.mig{
+    height: 300px;
+    border-radius: 10px;
+
+}
+.yellow{
+    color: yellow;
+    margin-top: 0px;
+}
+.heading{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    color: aqua;
+    margin-left: 7%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.heading1{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    color: yellow;
+    margin-left: 7%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.gear{
+    width: 100%;
+    border-radius: 5px;
+   
+
+}
+.one{
+    margin-top: 0px;
+    margin-bottom: 3px;
+    text-align: start;
+}
+.two{
+    color: grey;
+    text-align: start;
+}
+.three{
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 0px;
+}
+.navbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+.logo{
+width: 70px;
+
+}
+
+
+
+

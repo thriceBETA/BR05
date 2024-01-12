@@ -1,0 +1,773 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+href=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css ">
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<style>
+    body{
+        background-color: black;
+    }
+    .card{
+        background-color: black;
+    }
+   
+</style>
+</head>
+<body>
+    
+    <div class="display">
+        <img class="bar"onclick="toggleMenu()" src="bar.png">
+        
+        <img  class="logo"src="aprime.png">
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img  class="user"src="u1.png">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="try">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+    
+          </div>
+    
+      </div> 
+      
+    
+    <div id="menu">
+        <a href="all.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="rent.html">Movies on rent</a>
+       
+    </div>
+<div id="one" class="nav">
+    <img  class="logo"src="aprime.png">
+    <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="all.html">All</a>
+          <a class="dropdown-item" href="movies.html">Movies</a>
+          
+        </div>
+      </div>
+   
+    
+      
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          store
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="all.html">All</a>
+          <a class="dropdown-item" href="rent.html">Rent movies</a>
+         
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">HORROR</a>
+          <a class="dropdown-item" href="#">COMEDY</a>
+          <a class="dropdown-item" href="#">ACTION</a>
+        </div>
+      </div>
+      
+      
+      <div class="try">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+
+      </div>
+      <div class="try">
+        <p>Try for free</p>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          EN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">ENGLISH</a>
+          <a class="dropdown-item" href="#">HINDI</a>
+          <a class="dropdown-item" href="#">MALAYALAM</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img  class="user"src="u1.png">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">LOGIN</a>
+          <a class="dropdown-item" href="#">REGISTER</a>
+          
+        </div>
+      </div>
+     
+      
+      
+
+</div>
+
+<div class="container">
+    <h1>
+        <div class="cou">
+            <div class="heading">
+                <p><span style="color: rgb(9, 185, 243);">Prime</span>  Movies</p>
+            
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="premam.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="war.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="kick.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+    
+        </div>
+    </h1>
+
+</div>
+
+<div class="heading">
+    <p><span style="color: rgb(9, 185, 243);">Prime</span> Thriller Movies</p>
+
+</div>
+<div class="slider-container">
+    <img class="btnone"  onclick="nextSlide()"src="skip-track.png">
+    
+    
+    <div class="slider">
+        <!-- Row 1 -->
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig"src="cia.jpg">
+                <div class="test" id="ts">
+                    <p class="three">CIA</p>
+                    <p >2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig" src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="betch.jpg">
+                <div class="test" id="ts">
+                    <p class="three">betch</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig" src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig" src="cia.jpg">
+                <div class="test" id="ts">
+                    <p class="three">cia</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        
+
+    </div>
+   
+    
+    <img class="btntwo" onclick="prevSlide()"src="back.png">
+
+        
+
+        <!-- Row 2 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+        <!-- Row 3 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+    
+   
+   
+</div>
+<div class="heading">
+    <p><span style="color: rgb(9, 185, 243);">Prime</span> Comedy Movies</p>
+
+</div>
+<div class="slider-container">
+    <img  class="btnone"onclick="prevSlide1()" src="skip-track.png">
+    
+    <div class="sliderone">
+        <!-- Row 1 -->
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig"src="cia.jpg">
+                <div class="test" id="ts">
+                    <p class="three">CIA</p>
+                    <p >2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig"src="cia.jpg">
+                <div class="test" id="ts">
+                    <p class="three">CIA</p>
+                    <p >2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig"src="cia.jpg">
+                <div class="test" id="ts">
+                    <p class="three">CIA</p>
+                    <p >2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                    <p class="grey">The movie is about a man who travels to america in an illegal way to meet his lover who is traped in america</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        
+
+    </div>
+   
+    <img class="btntwo" onclick="prevSlide1()" src="back.png">
+
+        
+
+        <!-- Row 2 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+        <!-- Row 3 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+    
+   
+   
+</div>
+<div class="heading">
+    <p><span style="color: rgb(9, 185, 243);">Prime</span> Top Movies</p>
+
+</div>
+<div class="slider-container">
+    <img  class="btnone"onclick="nextSlide1()" src="skip-track.png">
+    
+    
+    <div class="sliderone">
+        <!-- Row 1 -->
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="gear"src="2018.jpg">
+                <div class="test" id="ts">
+                    <p class="three">2018</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="gear" src="kali.jpg">
+                <div class="test" id="ts">
+                    <p class="three">2018</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+       
+        
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="gear"src="alone.jpg">
+                <div class="test" id="ts">
+                    <p class="three">2018</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="gear"src="anjam.jpg">
+                <div class="test" id="ts">
+                    <p class="three">2018</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="gear"src="kali.jpg">
+                <div class="test" id="ts">
+                    <p class="three">2018</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        
+
+    </div>
+   
+    <img class="btntwo" onclick="prevSlide1()" src="back.png">
+
+        
+
+        <!-- Row 2 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+        <!-- Row 3 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+    
+   
+   
+</div>
+<div class="heading">
+    <p><span style="color: rgb(9, 185, 243);">Prime</span> Comedy Movies</p>
+
+</div>
+<div class="slider-container">
+    <img class="btnone" onclick="nextSlide1()" src="skip-track.png">
+    
+    
+    <div class="sliderone">
+        <!-- Row 1 -->
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="gear"src="2018.jpg">
+                <div class="test" id="ts">
+                    <p class="three">2018</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="gear" src="kali.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+       
+        
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="gear"src="alone.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="gear"src="anjam.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Anjam pathira</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="gear"src="kali.jpg">
+                <div class="test" id="ts">
+                    <p class="three">Anjam pathira</p>
+                    <p class="one">2017 2h 8min U/A</p>
+                    <p class="two">the movie is about the flood that had happen few year back in kerala</p>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        
+
+    </div>
+   
+    <img class="btntwo" onclick="prevSlide1()" src="back.png">
+
+        
+
+        <!-- Row 2 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+        <!-- Row 3 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+    
+   
+   
+</div>
+<div class="heading">
+    <p><span style="color: rgb(9, 185, 243);">Prime</span> Horror Movies</p>
+
+</div>
+<div class="slider-container">
+    <img class="bt1one" onclick="nextSlide()"src="skip-track.png">
+    
+    
+    <div class="slider">
+        <!-- Row 1 -->
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig"src="cia.jpg">
+                <div class="test" id="ts">
+                    <p>cia</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig" src="pada.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="betch.jpg">
+                <div class="test" id="ts">
+                    <p>betch</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig" src="pada.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+               
+                <img class="mig" src="cia.jpg">
+                <div class="test" id="ts">
+                    <p>cia</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="increaseSize(this)" ondblclick="decreaseSize(this)">
+            <div class="card-content">
+                <img class="mig"src="pada.jpg">
+                <div class="test" id="ts">
+                    <p>Padayotam</p>
+                    <p>2017 2h 8min U/A</p>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        
+
+    </div>
+    <div class="ele">
+       
+        <img  class="logo"src="aprime.png">
+        <div class="terms">
+            <a href="#">Terms and privacy Notice</a>
+            <a href="#">Send us feedback</a>
+            <a href="#">Help</a>
+
+
+        </div>
+        <div class="terms">
+            <p>1994-2025 Amozon.in.com,IFSC CODE at South</p>
+
+
+        </div>
+
+
+    </div>
+   
+    
+    <img class="btntwo" onclick="prevSlide()"src="back.png">
+
+        
+
+        <!-- Row 2 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+        <!-- Row 3 (Copy the structure for additional rows) -->
+        <!-- ... -->
+
+    
+   
+   
+</div>
+<script>
+      function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+function view() {
+            // Get the reference to the div
+            var div = document.getElementById('bar');
+
+            // Toggle the visibility based on the current state
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+
+function increaseSize(card) {
+        card.style.transform = "scale(1.2)";
+      
+    }
+    function decreaseSize(card) {
+      card.style.transform = "scale(1.1)";
+    }
+    const slider = document.querySelector('.slider');
+    let count = 0;
+
+    function nextSlide() {
+        count++;
+        updateSlider();
+    }
+
+    function prevSlide() {
+        count--;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const cardWidth = document.querySelector('.card').offsetWidth + 20; // Including margin
+        slider.style.transform = `translateX(${-count * cardWidth}px)`;
+    }
+    const slider1 = document.querySelector('.sliderone');
+    let count1 = 0;
+
+    function nextSlide1() {
+        count++;
+        updateSlider1();
+    }
+
+    function prevSlide1() {
+        count--;
+        updateSlider1();
+    }
+
+    function updateSlider1() {
+        const cardWidth = document.querySelector('.card').offsetWidth + 20; // Including margin
+        slider1.style.transform = `translateX(${-count * cardWidth}px)`;
+    }
+
+const cardContainer = document.getElementById('cardContainer');
+        const cards = document.querySelectorAll('.card');
+        let currentIndex = 0;
+      
+        function slideCards() {
+          const cardWidth = cards[0].offsetWidth;
+          currentIndex = (currentIndex + 1) % cards.length;
+          const translateValue = -currentIndex * cardWidth;
+          cardContainer.style.transform = `translateX(${translateValue}px)`;
+        }
+      
+        setInterval(slideCards, 2000); // Adjust the interval as needed (milliseconds)
+        let slideIndex = 0;
+showSlides();
+    </script>
+
+
+    
+</body>
+</html>

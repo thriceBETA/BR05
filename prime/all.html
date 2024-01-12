@@ -1,0 +1,287 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+href=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css ">
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+  <div class="display">
+    <img class="bar"onclick="toggleMenu()" src="bar.png">
+    
+    <img  class="logo"src="aprime.png">
+    <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img  class="user"src="u1.png">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="try">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+
+      </div>
+
+  </div> 
+  
+
+<div id="menu">
+    <a href="all.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="rent.html">Movies on rent</a>
+   
+</div>
+<div class="nav">
+    <img  class="logo"src="aprime.png">
+    <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="all.html">Home</a>
+          <a class="dropdown-item" href="movies.html">movies</a>
+          
+        </div>
+      </div>
+   
+    
+      
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          store
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="all.html">All</a>
+          <a class="dropdown-item" href="rent.html">Rent movies</a>
+         
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">HORROR</a>
+          <a class="dropdown-item" href="#">COMEDY</a>
+          <a class="dropdown-item" href="#">ACTION</a>
+        </div>
+      </div>
+      
+      
+      <div class="try">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+
+      </div>
+      <div class="try">
+        <p>Try for free</p>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          EN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">ENGLISH</a>
+          <a class="dropdown-item" href="#">MALAYALAM</a>
+          <a class="dropdown-item" href="#">HINDI</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img  class="user"src="u1.png">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">LOGIN</a>
+          <a class="dropdown-item" href="#">REGISTER</a>
+         
+        </div>
+      </div>
+      
+      
+
+</div>
+<div class="container-fluid">
+   
+<div class="tit">
+    <h1>Welcome to Amazon Prime video</h1>
+    <p>Watch the latest Movies,TV shows</p>
+    <button class="btn btn-primary">Sign in to Join prime</button>
+</div>
+<div class="tit1">
+    <h1>Movie rentals on Prime Video</h1>
+    <p>Early Access to new Movies,before digital subscription</p>
+    <button class="btn btn-primary">Rent now</button>
+</div>
+
+</div>
+<div class="cont">
+
+    <div class="all">
+        <div class="second">
+
+            <p class="fav">Your favourite channels all in one place</p>
+            <p class="fav1">Create free collage flyers, posters, social media graphics and videos in minutes. Choose from 2520+ eye-catching templates to wow your audience.</p>
+
+
+        </div>
+        <div class="first">
+            <div class="box">
+                <img  class="square"src="dis.PNG">
+                <img class="square"src="lo.PNG">
+                <img class="square"src="lo.PNG">
+                
+            </div>
+            <div class="box">
+                <img  class="square"src="dis.PNG">
+                <img class="square"src="lo.PNG">
+                <img class="square"src="lo.PNG">
+                
+            </div>
+            <div class="box">
+                <img  class="square"src="dis.PNG">
+                <img class="square"src="lo.PNG">
+                <img class="square"src="lo.PNG">
+                
+            </div>
+            <div class="box">
+                <img  class="square"src="dis.PNG">
+                <img class="square"src="lo.PNG">
+                <img class="square"src="lo.PNG">
+                
+            </div>
+           
+
+        </div>
+    </div>
+   
+</div>
+<div class="on">
+    <p class="fav2">Your favourite channels all in one place</p>
+    <p class="fav12">Create free collage flyers, posters, social media graphics and videos in minutes. Choose from 2520+ eye-catching templates to wow your audience.</p>
+
+    <div class="rectangle">
+        <div class="box1">
+            <img  class="square1"src="dis.PNG">
+            <img  class="square1"src="dis.PNG">
+            <img  class="square1"src="dis.PNG">
+            
+            
+        </div>
+        <div class="box1">
+            <img  class="square1"src="dis.PNG">
+            <img  class="square1"src="dis.PNG">
+            <img  class="square1"src="dis.PNG">
+            
+            
+        </div>
+        <div class="box1">
+            <img  class="square1"src="dis.PNG">
+            <img  class="square1"src="dis.PNG">
+            <img  class="square1"src="dis.PNG">
+            
+            
+        </div>
+    </div>
+
+</div>
+
+<div class="remote">
+
+</div>
+<div class="finaltit">
+    <h1>Welcome to Amazon Prime video</h1>
+  <div class="ft">
+    <p>
+        Amazon Prime (stylized as simply Prime) is a paid subscription service of Amazon which is available in various countries and gives users access to additional services otherwise unavailable or available at a premium to other Amazon customers. 
+    </p>
+
+  </div>  
+    <button class="btn btn-primary">Get   Started</button>
+</div>
+<div class="best">
+    <div class="finalcuttitle">
+        <h1>Welcome to Amazon Prime video</h1>
+      <div class="ftcut">
+        <p>
+            Amazon Prime (stylized as simply Prime) is a paid subscription service of Amazon which is available in various countries and gives users access to additional services otherwise unavailable or available at a premium to other Amazon customers. e
+        </p>
+    
+      </div>  
+        <button class="btn btn-primary">Get   Started</button>
+    </div>
+
+</div>
+
+    <div class="ele">
+       
+        <img  class="logo"src="aprime.png">
+        <div class="terms">
+            <a href="#">Terms and privacy Notice</a>
+            <a href="#">Send us feedback</a>
+            <a href="#">Help</a>
+
+
+        </div>
+        <div class="terms">
+            <p>1994-2025 Amozon.in.com,IFSC CODE at South</p>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-4">
+        <p>1</p>
+
+
+      </div>
+      <div class="col-4">
+        <p>2</p>
+        
+      </div>
+      <div class="col-4">
+        <p>3</p>
+        
+      </div>
+    </div>
+
+
+<script>
+      function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+</script>
+  
+
+
+   
+
+
+    
+</body>
+</html>
